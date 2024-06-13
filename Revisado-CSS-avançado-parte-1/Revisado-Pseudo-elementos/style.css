@@ -1,0 +1,83 @@
+:root {
+    --cor-texto: red;
+    --size-texto: 1em;
+    --deco-texto: line-through;
+}
+
+/*  */
+
+.first-letter::first-letter {
+    color: var(--cor-texto);
+    font-size: var(--size-texto);
+    text-decoration: var(--deco-texto);
+}
+
+/*  */
+
+.first-line::first-line {
+    color: var(--cor-texto);
+    font-size: var(--size-texto);
+    text-decoration: var(--deco-texto);
+}
+
+/*  */
+
+.li::marker {
+    color: red;
+    font-size: 25px;
+}
+
+.li2::marker {
+    content: url(image/image.png);
+}
+
+/* Sim, podemos por background, mas precisamos fazer isso abaixo, compara-se com after. */
+
+.before::before {
+    content: ""; 
+    background: url(image/imagem2.png) center center no-repeat;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+}
+
+.after::after {
+    content: url(image/imagem2.png);
+}
+
+.before2::before{
+    content: "TEXTO INSERIDO";
+    color: blue;
+}
+
+.after2::after {
+    content: "TEXTO INSERIDO";
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+* {
+    margin: 0;
+}
+
+h3,h5,p,ul,ol,h4 {
+    margin: 15px 0 15px 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}

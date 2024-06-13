@@ -1,0 +1,73 @@
+h4{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 0px 0px 0px;
+}
+
+/*  */
+
+/* Seletor Universal - Para todos os elementos HTML */
+*{
+    margin: 0px 0px 20px 0px;
+}
+
+/* Seleciona todas as tags / elementos na pagina H1  */
+h1{
+    color: cornflowerblue;
+}
+
+/* Com a classe no seletor, todos os elementos que tiverem esta classe, será estilizada. */
+.paragrafo {
+    color: blue;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Com este ID no seletor, todos os elementos que tiverem esse ID, será estilizado (Não é recomendado ter o mesmo ID para outros elementos, cada um deve ter um ID diferente) */
+#paragrafo{
+    margin-left: 100px;
+    text-decoration:overline underline;
+}
+#menu{
+    margin-left: 100px;
+    text-decoration: underline overline;
+}
+
+/* Definir duas classes em um único elemento evita duplicação de código. Por exemplo, ao definir font-size: 30px para a classe "titulo", todos os elementos com essa classe receberão essa estilização. Assim, qualquer elemento com classes combinadas será estilizado de acordo, permitindo configurar propriedades comuns de forma eficiente. */
+.titulo {
+    font-size: 25px;
+}
+
+.titulo.verde{
+    color: green;
+}
+
+.titulo.roxo{
+    color: purple;
+}
+
+/*Aqui abaixo aplicamos as mesmas propriedades de estilos a diferentes seletores e formatos com virgulas*/
+.h1-virgula, #p2-virgula,.p1-virgula {
+    color: red;
+}
+
+/* Seletor com classe pai e filha, irar estilizar a classe filha que esteja dentro de uma classe pai */
+.sobre .texto{
+    color: springgreen;
+}
+
+/* Seletor com sinal de maior, Seleciona todos os elementos desde que sejam filhos de um determinado elemento. Por exemplo, div > p. > */
+.div1 > p{
+    color: brown;
+}
+
+/* Seletor com sinal de adição, seleciona o primeiro elemento imediatamente depois de outro determinado elemento, se tiver mais de um, mesmo assim será selecionado um. */
+div + p{
+    color: blue;
+}
+
+/* Seletor com Atributo */
+a[href="google.com"]{
+    color: red;
+    text-decoration: overline underline;
+    text-shadow: 1px 1px 3px black;
+}
+

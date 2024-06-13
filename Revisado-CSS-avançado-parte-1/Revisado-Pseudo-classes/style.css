@@ -1,0 +1,70 @@
+/* */
+
+.li:nth-child(odd) {
+    color: red;
+}
+
+.li:nth-child(even) {
+    color: blue;
+}
+
+/*  */
+
+.li2:nth-child(3n) {
+    color: blue;
+}
+
+.li2:nth-child(2) {
+    color: red;
+}
+
+/*  */
+
+.li3:nth-child(n+3):nth-child(-n+5) {
+    color: red;
+}
+
+/*  */
+
+.li4:nth-last-child(3) {
+    color: red;
+}
+
+.li4:nth-child(3) {
+    color: blue;
+}
+
+/*  */
+
+p:only-child {
+    color: red;
+}
+
+/*  */
+
+/* ---- */
+
+* {
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
+h3,h6,ol {
+    margin: 0px 0px 15px 0px;
+}
+
+h4 {
+    margin: 15px 0 15px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.1);
+}

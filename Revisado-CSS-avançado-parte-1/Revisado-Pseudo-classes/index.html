@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-classes</title>
+</head>
+
+<body>
+
+    <h3>li:nth-child(odd) + li:nth-child(even) </h3>
+    <h6>(odd) que é impar esta vermelho</h6>
+    <h6>(even) que é par esta azul</h6>
+    <ol>
+        <li class="li">Item 1</li>
+        <li class="li">Item 2</li>
+        <li class="li">item 3</li>
+        <li class="li">Item 4</li>
+        <li class="li">item 5</li>
+        <li class="li">Item 6</li>
+    </ol>
+
+    <h3>li:nth-child(3n) + li:nth-child(2)</h3>
+    <h6>(3n) será selecionado a cada 3 itens, azul.</h6>
+    <h6>(2) será selecionado somente o 2 item, vermelho.</h6>
+
+    <ol>
+        <li class="li2">Item 1</li>
+        <li class="li2">Item 2</li>
+        <li class="li2">item 3</li>
+        <li class="li2">Item 4</li>
+        <li class="li2">item 5</li>
+        <li class="li2">Item 6</li>
+    </ol>
+
+    <h3>li:nth-child(n+3):nth-child(-n+5)</h3>
+    <h6>Devem ser colocados juntos, será colocado um range de valor inicial até o valor final, vermelho</h6>
+    <h6>Se colocarmos somente o :nth-child(n+3) , Será colocado somente o limite inical indo do 3 até o final possivel
+    </h6>
+
+    <h6>(n+3) É o valor inicial, (-n+5) é o valor final</h6>
+
+    <ol>
+        <li class="li3">Item 1</li>
+        <li class="li3">Item 2</li>
+        <li class="li3">item 3</li>
+        <li class="li3">Item 4</li>
+        <li class="li3">item 5</li>
+        <li class="li3">Item 6</li>
+    </ol>
+
+    <h3>li:nth-child(3) + li:nth-last-child(3)</h3>
+    <h6>:nth-last-child(3) A sua orientação de estilização será sempre a partir do ultimo elemento filho, vermelho.</h6>
+    <h6>:nth-child(3) Será aplicado no terceiro item, azul</h6>
+
+    <ol>
+        <li class="li4">Item 1</li>
+        <li class="li4">Item 2</li>
+        <li class="li4">item 3</li>
+        <li class="li4">Item 4</li>
+        <li class="li4">item 5</li>
+        <li class="li4">Item 6</li>
+    </ol>
+
+    <h3>:only-child</h3>
+
+    <h6>:only-child, será aplicado somente ao unico filho de um elemento, Tendo elementos dentro de uma div, mesmo que
+        diferentes, são considerados irmãos, vermelho.</h6>
+
+    <!-- as tags <h3> e <p> são consideradas irmãs -->
+    <h4>(div)</h4>
+    <div>
+        <h3>Titulo</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad minima architecto cumque, maiores recusandae
+            tenetur totam impedit praesentium magni facere molestias autem saepe optio nam sapiente nemo reprehenderit
+            voluptate officiis.</p>
+    </div>
+    <h4>(/div)</h4>
+
+    <!-- a tag <p> é FILHA ÚNICA (only child) -->
+    <h4>(div)</h4>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad minima architecto cumque, maiores recusandae
+            tenetur totam impedit praesentium magni facere molestias autem saepe optio nam sapiente nemo reprehenderit
+            voluptate officiis.</p>
+    </div>
+    <h4>(/div)</h4>
+</body>
+
+</html>

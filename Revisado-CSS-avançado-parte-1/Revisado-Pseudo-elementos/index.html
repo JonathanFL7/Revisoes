@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo-Elementos</title>
+</head>
+
+<body>
+    <h3>::first-letter{}</h3>
+    <h5>Este Pseudo-Elemento estiliza a primeira letra de um elemento.</h5>
+
+    <p class="first-letter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ipsum libero vitae quo
+        quia reprehenderit, possimus voluptatibus eius sit consequuntur nostrum autem incidunt accusantium officia ipsa
+        placeat rerum.</p>
+
+    <h3>::first-line{}</h3>
+    <h5>Este Pseudo-elemento estiliza a primeira linha de um elemento. <br>
+        Dependendo da resolução do visor que o usuario esteja, vai variar a quantidade de palavras estilizadas.
+    </h5>
+
+    <p class="first-line">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ipsum libero vitae quo
+        quia reprehenderit, possimus voluptatibus eius sit consequuntur nostrum autem incidunt accusantium officia ipsa
+        placeat rerum.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ipsum libero vitae quo
+        quia reprehenderit, possimus voluptatibus eius sit consequuntur nostrum autem incidunt accusantium officia ipsa
+        placeat rerum
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ipsum libero vitae quo
+        quia reprehenderit, possimus voluptatibus eius sit consequuntur nostrum autem incidunt accusantium officia ipsa
+        placeat rerum
+    </p>
+
+    <h3>::marker{}</h3>
+    <h5>É especifico a elementos que é identificado como lista, como "li" . <br> Com ele podemos mudar a cor, tamanho,
+        imagem e texto ao marcador além de outras propriedades com esse Pseudo-elemento pode oferecer.</h5>
+
+    <ul>
+        <li class="li">Item 1</li>
+        <li class="li">Item 2</li>
+        <li class="li">Item 3</li>
+    </ul>
+
+    <ol>
+        <li class="li2">Item 1</li>
+        <li class="li2">Item 2</li>
+        <li class="li2">Item 3</li>
+    </ol>
+
+    <h3>::before + ::after</h3>
+    <h5>Tanto before quanto after é de extrema importancia nos projetos, usando esses Pseudo Elementos podemos inserir
+        um novo elemento no conteudo que quisermos no CSS. <br> Podemos por esses conteudos no HTML, mas teriamos que
+        fazer varias vezes, causando ineficiencia. </h5>
+
+    <h4 class="before">Meu Titulo com Before</h4>
+    <h4 class="before">Meu Titulo com Before</h4>
+
+    <h4 class="after">Meu Titulo com After</h4>
+    <h4 class="after">Meu Titulo com After</h4>
+
+    <h4 class="before2">Meu Titulo com Before</h4>
+
+    <h4 class="after2">Meu Titulo com After</h4>
+</body>
+
+</html>

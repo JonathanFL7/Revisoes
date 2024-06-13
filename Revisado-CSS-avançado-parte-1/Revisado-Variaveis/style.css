@@ -1,0 +1,41 @@
+/*No CSS, é possível criar e utilizar variáveis que podem receber valores para diversas propriedades. E com ela, a manutenção e a leitura do código se torna muito mais simples e intuitiva, tendo ESCOPO GLOBAL / LOCAL */
+
+/* No Global utiliza-se o :Root Que é a raiz.
+E o Local é utilizado dentro do seletor de qualquer elemento. */
+
+/* Variáveis de Escopo Global pode ser utilizadas em todo o documento CSS, já as de Escopo Local, só podem ser utilizadas dentro do seletor que ela foi criada. */
+
+
+/* Escopo GLOBAL */
+:root {
+    --cor-texto-green: lightgreen;
+    --cor-texto-darkgreen: darkgreen;
+    --tamanho-texto2: 30px;
+}
+
+/* Escopo LOCAL */
+h1 {
+    --cor-texto-coral: Coral;
+    --tamanho-texto1: 45px;
+
+    color: var(--cor-texto-coral);
+    font-size: var(--tamanho-texto1);
+}
+
+p {
+    --cor-texto-darkblue: darkblue;
+
+    color: var(--cor-texto-darkblue);
+}
+
+/* Abaixo está utilizando o escopo global. */
+/* Podemos colocar um fallback, caso a variavel não funcione, irar carregar o segundo valor. */
+h2 {
+    color: var(--cor-texto-green, red);
+    font-size: var(--tamanho-texto2, 15px);
+}
+
+ol {
+    color: var(--cor-texto-darkgreen, darkred);
+    font-size: var(--tamanho-texto2, 15px);
+}

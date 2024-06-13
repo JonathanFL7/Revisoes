@@ -1,0 +1,37 @@
+img{
+    width: 350px;
+    margin: 35px;
+}
+
+/* ScaleX - ScaleY (Muda a escala da imagem, quando o valor é posto, vai aumentar em vezes, 5 = 5 vezes) */
+
+.imgsx{
+    transform: scaleX(2);
+}
+
+.imgsy{
+    transform: scaleY(1.6);
+}
+
+/* Rotate - RotateX - RotateY */
+
+.imgr{
+    transform: rotate(80deg);
+}
+
+/* Testar Os resultados do Rotate X e Y, os resultados aparenta ser muito imprevisiveis. */
+.imgrx{
+    transform: rotateX(80deg);
+}
+
+.imgry{
+    transform: rotateY(80deg);
+}
+
+/* Translate X e Y (Podemos fazer uma translação, uma movimentação, de um elemento na tela 2D "Horizontalmente e Verticalmente" Ou seja, até valores negativos que vá para direção oposto, dando liberdade para posicionar um elemento ) */
+
+.imgtxy{
+    transform: translate(95px, -65px);
+}
+
+/* Sim podemos por TranslateX e TranslateY, então não teremos dois valores como um Translate. */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores</title>
+</head>
+
+<body>
+    <h4>Seletores são padrões CSS que utilizamos para selecionar elementos HTML e estilizarmos da forma que a gente
+        quiser.</h4>
+    <h4>Seletor com h1, estiliza todos elementos h1 da pagina.</h4>
+
+    <h1>Seletores</h1>
+    <h1>Titulo 1 exemplo</h1>
+
+    <h4>Seletor com Classe (.classe)</h4>
+    <p class="paragrafo">Seletor com classe, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem natus dolor
+        blanditiis sapiente quis non laboriosam corrupti? Facilis assumenda, placeat alias doloribus qui voluptates
+        ipsam? Iste sequi alias totam voluptatem.</p>
+
+    <h4>Seletor com Id (#menu)</h4>
+    <p id="paragrafo">Estilizando com id.</p>
+    <nav id="menu">
+        <ul>
+            <li>Sobre</li>
+            <li>Contato</li>
+            <li>Projeto</li>
+        </ul>
+    </nav>
+
+    <h4>Seletor com duas classes (.titulo.verde) (.titulo.roxo)
+    </h4>
+    <h1 class="titulo verde">Titulo 1 com duas classes</h1>
+    <h1 class="titulo roxo">Titulo 2 com duas classes</h1>
+
+    <h4>Seletor com virgula estiliza dois ou mais elementos separados por vírgula para cada um dos elemento, por exemplo
+        h1, .classe1, #id1.</h4>
+
+    <h2 class="h1-virgula">Titulo</h2>
+    <p class="p1-virgula">Paragrafo Classe</p>
+    <p id="p2-virgula">Paragrafo id</p>
+
+    <h4>Seletor com classe filha (.classe1 .classe2) irar estilizar somente a classe filha que esteja dentro de um
+        determinado classe pai.</h4>
+    <h2>Estilizando com classe filha</h2>
+    <h5>(div class="sobre")</h5>
+    <div class="sobre">
+        p class="texto"
+        <p class="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sequi in aliquam. Eligendi harum
+            velit accusantium, maxime error sunt tempora quod reiciendis inventore dolorem illo voluptate reprehenderit
+            impedit qui quia.</p>
+    </div>
+    <h5>(/div)</h5>
+
+    <h4>Seletor com sinal de maior > , Seleciona todos os elementos desde que sejam filhos de um determinado elemento,
+        (div > p)</h4>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <h4>Seletor com sinal de adição, Seleciona o primeiro elemento que aparecer imediamente depois de um outro
+        determinado elemento.
+        Então mesmo que tenha outro elemento igual depois, não será selecionado mesmo assim.
+        O elemento que será adicionado será o externo, então div e p estará separados um abaixo do outro no html.</h4>
+
+    <div>(div)</div>
+    <p>(p)Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>(p)Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <h4>Seletor com atributo a[atributo=valor] o seletor está com o atributo href de um link a, que contem o link do
+        google.com logo, somente o link que tiver esse url será estilizado.</h4>
+
+    <a href="google.com">Link do Google.com</a>
+    <a href="/">Sem Link do Google.com</a>
+</body>
+
+</html>
