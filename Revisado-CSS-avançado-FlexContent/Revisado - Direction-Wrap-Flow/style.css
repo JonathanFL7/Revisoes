@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+}
+
+/* Flex Direction */
+
+.container.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container.column {
+    flex-direction: column;
+}
+
+.container.column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+
+.container.flexwrap.nowrap{
+    flex-flow: nowrap;
+}
+
+.container.flexwrap.wrap{
+    flex-flow: wrap;
+}
+
+.container.flexwrap.wrap-reverse{
+    flex-wrap: wrap-reverse;
+
+}

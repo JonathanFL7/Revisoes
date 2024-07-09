@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction-Wrap-Flow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <h1>Flex-flow é uma abreviação das duas propriedades, direction e wrap.</h1>
+    <h3>A propriedade Flex-flow é um atalho que combina as propriedades flex-direction e flex-wrap.</h3>
+
+    <h2>Flex-Direction = Row (Padrão)</h2>
+    <h4>Alinha os itens flexíveis em uma linha, da esquerda para a direita (direção padrão)</h4>
+    <div class="container direction row">
+        <div>
+            <p>Texto 1</p>
+        </div>
+        <div>
+            <p>Texto 2</p>
+        </div>
+        <div>
+            <p>Texto 3</p>
+        </div>
+    </div>
+
+    <h2 class="row-reverse">Flex-Direction = Row-reverse</h2>
+    <h4 class="row-reverse">Alinha os itens flexíveis em uma linha, da direita para a esquerda</h4>
+    <div class="container direction row-reverse">
+        <div>
+            <p>Texto 1</p>
+        </div>
+        <div>
+            <p>Texto 2</p>
+        </div>
+        <div>
+            <p>Texto 3</p>
+        </div>
+    </div>
+
+    <h2>Flex-Direction = Column</h2>
+    <h4>Alinha os itens flexíveis em uma coluna, de cima para baixo</h4>
+    <div class="container direction column">
+        <div>
+            <p>Texto 1</p>
+        </div>
+        <div>
+            <p>Texto 2</p>
+        </div>
+        <div>
+            <p>Texto 3</p>
+        </div>
+    </div>
+
+    <h2>Flex-Direction = Column-reverse</h2>
+    <h4>Alinha os itens flexíveis em uma coluna, de baixo para cima</h4>
+    <div class="container direction column-reverse">
+        <div>
+            <p>Texto 1</p>
+        </div>
+        <div>
+            <p>Texto 2</p>
+        </div>
+        <div>
+            <p>Texto 3</p>
+        </div>
+    </div>
+
+    <h2>Flex-Wrap = nowrap (padrão), wrap e wrap-reverse.</h2>
+    <h4>Flex-wrap controla a quebra de linha dos itens flexíveis dentro do contêiner.
+    A quebra de linha será feita caso o container ou a tela não deem espaço suficiente.</h4>
+
+    
+        <h2>(Padrão) nowrap</h2>
+        <div class="container flexwrap nowrap">
+            <div>Bloco 1</div>
+            <div>Bloco 2</div>
+            <div>Bloco 3</div>
+            <div>Bloco 4</div>
+            <div>Bloco 5</div>
+            <div>Bloco 6</div>
+            <div>Bloco 7</div>
+            <div>Bloco 8</div>
+            <div>Bloco 9</div>
+            <div>Bloco 10</div>
+            <div>Bloco 11</div>
+            <div>Bloco 12</div>
+            <div>Bloco 13</div>
+            <div>Bloco 14</div>
+            <div>Bloco 15</div>
+        </div>
+    
+        <h2>Flex-wrap: wrap</h2>
+        <div class="container flexwrap wrap">
+            <div>Bloco 1</div>
+            <div>Bloco 2</div>
+            <div>Bloco 3</div>
+            <div>Bloco 4</div>
+            <div>Bloco 5</div>
+            <div>Bloco 6</div>
+            <div>Bloco 7</div>
+            <div>Bloco 8</div>
+            <div>Bloco 9</div>
+            <div>Bloco 10</div>
+            <div>Bloco 11</div>
+            <div>Bloco 12</div>
+            <div>Bloco 13</div>
+            <div>Bloco 14</div>
+            <div>Bloco 15</div>
+        </div>
+    
+        <h2>Flex-wrap: wrap-reverse</h2>
+    
+        <div class="container flexwrap wrap-reverse">
+            <div>Bloco 1</div>
+            <div>Bloco 2</div>
+            <div>Bloco 3</div>
+            <div>Bloco 4</div>
+            <div>Bloco 5</div>
+            <div>Bloco 6</div>
+            <div>Bloco 7</div>
+            <div>Bloco 8</div>
+            <div>Bloco 9</div>
+            <div>Bloco 10</div>
+            <div>Bloco 11</div>
+            <div>Bloco 12</div>
+            <div>Bloco 13</div>
+            <div>Bloco 14</div>
+            <div>Bloco 15</div>
+        </div>
+    </div>
+</body>
+
+</html>

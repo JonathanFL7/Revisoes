@@ -1,0 +1,63 @@
+html {
+    background: black;
+}
+h1,h2 {
+    margin: 18px 0px 50px 0px;
+}
+
+h3,h4 {
+    margin: 0px 0px 18px 0px;
+}
+
+h1,h3,h2,h4{
+    color: rgb(255, 255, 255, 0.9);;
+}
+
+p {
+    font-size: 30px;
+}
+
+/* Flex Direction */
+
+.container.direction div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.container.direction div:nth-child(1){
+    background: Blue;
+}
+.container.direction div:nth-child(2){
+    background: red;
+}
+.container.direction div:nth-child(3){
+    background: green;
+}
+
+/* Flex-wrap */
+
+.flexwrap {
+    font-size: 30px;
+}
+
+.container.flexwrap div {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    background-color: white;
+}
+
+.container.flexwrap.nowrap div{
+    background-color: blue;
+}
+
+.container.flexwrap.wrap div {
+    background-color: red;
+}
+
+.container.flexwrap.wrap-reverse div{
+    background-color: green;
+}
+

@@ -1,0 +1,28 @@
+.order.item2{
+    order: -1;
+}
+.order.item2{
+    order: -1;
+}
+
+/*  */
+
+.align-self.item3{
+    align-self: auto;
+}
+
+.flex-start .item3{
+    align-self: flex-start;
+}
+
+.center .item3{
+    align-self: center;
+}
+
+.flex-end .item3{
+    align-self: flex-end;
+}
+
+.stretch .item3{
+    align-self: stretch;
+}

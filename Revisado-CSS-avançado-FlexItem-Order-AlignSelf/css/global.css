@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    border: solid 1px grey;
+    max-width: 550px;
+}
+
+.item.order{
+    background-color: lightblue;
+    margin: 5px;
+    font-size: 55px;
+    flex: 1;
+}
+
+.item.align-self{
+    background-color: lightblue;
+    margin: 5px;
+    font-size: 26px;
+    flex: 1;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Flex Item = Grow, Basis, Shrink</title>
+</head>
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi nihil quos. Nam, harum dicta dolor eaque quam possimus iure delectus sit aliquid. Tempora veritatis nostrum praesentium? Ipsa, quasi ducimus?
+
+<body>
+
+    <section>
+        <h2>Flex-Item Grow</h2>
+        <h3>flex-grow: permite que um item flex ocupe espaço extra no contêiner; padrão 0, maior valor aumenta crescimento.</h3>
+        
+        <div class="container">
+            <div class="item grow-0">0</div>
+            <div class="item grow-1">1</div>
+            <div class="item grow-2">2</div>
+        </div>
+
+    </sectiton>
+
+    <section>
+        <h2>Flex-Item Basis</h2>
+        <h3>flex-basis: define o tamanho inicial de um item flex; padrão auto, aceita valores em px, %, etc.</h3>
+
+        <div class="container">
+            <div class="item basis-auto">Lorem Dolor Ipsum.</div>
+            <div class="item basis-0">Lorem ipsum dolor. </div>
+            <div class="item basis-300">Lorem ipsum dolor sit amet consectetur adipisicing elit, Hic quasi nihil quos.
+            </div>
+        </div>
+        
+    </section>
+
+    <section>
+        <h2>Flex-Item Shrink</h2>
+        <h3>flex-shrink: determina a capacidade de encolhimento de um item flex; padrão 1, valor 0 mantém tamanho fixo.</h3>
+
+        <div class="container">
+            <div class="item shrink-0">Lorem ipsum dolor sit. (0)</div>
+            <div class="item shrink-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi nihil quos. Nam, harum dicta dolor eaque quam possimus iure delectus sit aliquid Tempora veritatis nostrum praesentium? Ipsa, quasi ducimus? (1)</div>
+            <div class="item shrink-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quasi nihil quos. Nam, harum dicta dolor eaque quam possimus iure delectus sit aliquid. Tempora veritatis nostrum praesentium? Ipsa, quasi ducimus?</div>
+        </div>
+        
+    </section>
+
+</body>
+
+</html>

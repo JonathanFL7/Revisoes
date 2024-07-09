@@ -1,0 +1,41 @@
+.container{
+    flex-wrap: wrap;
+    height: 130px;
+}
+
+.flex-start .item,
+.flex-end .item,
+.center .item,
+.stretch .item{
+    flex: 1;
+}
+
+.flex-start{
+    align-content: flex-start;
+}
+
+.flex-end{
+    align-content: flex-end;
+}
+
+.center{
+    align-content: center;
+}
+
+.stretch{
+    align-content: stretch;
+}
+
+/* Os valores a seguir necessitam que o flex container receba a propriedade flex-wrap: wrap; para que o aling-content funcione de forma correta.  */
+
+.space-between{
+    align-content: space-between;
+}
+
+.space-around{
+    align-content: space-around;
+}
+
+.space-evenly{
+    align-content: space-evenly;
+}

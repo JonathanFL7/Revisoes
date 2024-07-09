@@ -1,0 +1,58 @@
+/* Grow */
+/* Flex item - Grow */
+
+/*A propriedade flex-grow permite que um item flex ocupe todo o espaço disponível no contêiner flex.
+O valor padrão é 0, mas pode ser ajustado para qualquer número inteiro para determinar a prioridade do item na ocupação do espaço.
+Exemplo: flex-grow: 0, 1, 2, 3;*/
+
+.grow-0{
+    flex-grow: 0;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
+}
+
+
+/* Basis */
+/*Flex item - Basis*/
+
+/* A propriedade flex-basis define o tamanho inicial de um item flex dentro do contêiner flex.
+ O valor padrão é auto, o que significa que o tamanho será determinado pelo conteúdo do item.
+ No entanto, valores específicos (em px, %, etc.) podem ser usados para definir o tamanho inicial.
+Exemplo: flex-basis: auto, 0, 300px; */
+
+.basis-auto{
+    flex-basis: auto;
+}
+
+.basis-0{
+    flex-basis: 0;
+}
+
+.basis-300{
+    flex-basis: 300px;
+}
+
+/* Shrink */
+/* Flex item - Shrink */
+
+ /* A propriedade flex-shrink define a capacidade de um item flex de encolher em relação aos outros itens flex. 
+ O valor padrão é 1, permitindo que o item se encolha conforme necessário.
+ Valores maiores aumentam a capacidade de encolhimento, enquanto um valor de 0 torna as dimensões do item fixas.
+ Exemplo: flex-shrink: 1, 2, 3;
+ Quando flex-shrink é 0, os itens mantêm suas dimensões definidas, como largura de 200px. */
+
+.shrink-0{
+    flex-shrink: 0;
+}
+.shrink-2{
+    flex-shrink: 2;
+}
+.shrink-3{
+    flex-shrink: 3;
+}

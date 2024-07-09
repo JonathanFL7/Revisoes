@@ -1,0 +1,39 @@
+/* Alinha os itens ao início do eixo transversal */
+.container.flex-start{
+    align-items: flex-start; 
+}
+
+
+/* Alinha os itens ao final do eixo transversal */
+.container.flex-end{
+    align-items: flex-end; 
+}
+
+
+/* Alinha os itens ao centro do eixo transversal */
+.container.center{
+    align-items: center; 
+}
+
+
+/* Estica os itens para preencher o contêiner */
+.container.stretch{
+    align-items: stretch; 
+}
+
+
+
+/*  */
+
+/* Alinha os itens à linha de base do primeiro item */
+.container.baseline{
+    align-items: baseline;
+}
+
+.baseline .item{
+    flex: 1;
+}
+
+.baseline .item:nth-child(1){
+    padding-top: 20px;
+}

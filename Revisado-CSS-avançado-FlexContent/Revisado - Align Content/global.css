@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    max-width: 400px;
+    border: 2px solid #ccc;
+}
+
+.item {
+    background-color: rgb(195, 145, 241);
+    font-size: 19px;
+    margin: 3px;
+    text-align: center;
+}
